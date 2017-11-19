@@ -1,0 +1,13 @@
+namespace mars.ap.wgi.wgiplant.fpschain.ecert 
+
+participant User identified by email {
+  o String email
+}
+
+asset Ecert identified by assetKey {
+  o String assetKey
+}
+
+transaction ChangeAssetValue {
+  o String detail
+}
