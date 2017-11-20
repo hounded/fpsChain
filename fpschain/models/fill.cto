@@ -18,10 +18,6 @@ participant User identified by email {
   o String email
 }
 
-asset Ecert identified by assetKey {
-  o String assetKey
-}
-
-transaction ChangeAssetValue {
-  o String detail
+asset Fill identified by id {
+  o String id
 }

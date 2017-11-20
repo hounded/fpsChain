@@ -1,4 +1,4 @@
-namespace mars.ap.wgi.wgiplant.fpschain.user 
+namespace mars.ap.wgi.wgiplant.fpschain.participants 
 
 participant User identified by id {
   o String id
