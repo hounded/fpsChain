@@ -1,0 +1,8 @@
+namespace mars.ap.wgi.wgiplant.fpschain.user 
+
+participant User identified by id {
+  o String id
+  o String firstName
+  o String lastName
+  o String email
+}

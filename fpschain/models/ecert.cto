@@ -1,11 +1,53 @@
 namespace mars.ap.wgi.wgiplant.fpschain.ecert 
 
+import mars.ap.wgi.wgiplant.fpschain.fill.*
+
+enum Status {
+  o RECEIVED
+  o MATCHED
+  o RETURNED
+  o WAITING
+  o CROSS
+  o ACTIVE
+  o FULL
+  o HALF
+  o EXACT
+  o LOADOUT
+  o CONSUMED
+}
+
 participant User identified by email {
   o String email
 }
 
-asset Ecert identified by assetKey {
-  o String assetKey
+asset Ecert identified by id {
+  o String id
+  o String ecert
+  o Integer eCertLine 
+  o String declaration optional
+  o Integer itemCode
+  o String itemDescription optional
+  o String[] species
+  o String[] countries
+  o String origin
+  o String type
+  o Integer typeNumber
+  o Double weight optional
+  o Double blocks optional
+  o Double blockWeight optional
+  o Status status optional 
+  o String blockMode optional
+  o String location optional
+  o String Batch optional
+  o DateTime batchExpiry optional
+  o DateTime matchedTime optional
+  o DateTime expiryTime optional
+  o Integer slStatus optional
+  o String slStatusMessage optional
+  -->User optional
+  -->Fill optional
+
+  
 }
 
 transaction ChangeAssetValue {
