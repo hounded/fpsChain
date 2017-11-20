@@ -44,7 +44,3 @@ asset Ecert identified by id {
   -->User user optional
   -->Fill fill optional
 }
-
-transaction ChangeAssetValue {
-  o String detail
-}
